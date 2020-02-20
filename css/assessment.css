@@ -1,0 +1,42 @@
+body{
+  background-image: url('../images/background.jpeg');
+  background-color: white;
+  font-family: "Times New Roman", sans-serif;
+}
+
+img{
+   width: 125px; 
+   margin-bottom: 10px; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+#mystuff {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+div{
+   padding: 25px; 
+   margin:5px; 
+   text-align: center;
+}
+
+h1 {
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 15px;
+}
+
+@media all and (min-width: 800px){
+
+	#mystuff {
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
+	div:nth-child(odd) {border: 2px solid black}
+
+}
